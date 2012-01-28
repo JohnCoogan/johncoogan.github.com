@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>HTML5 Presentation demo | Script tutorials</title>
+
+    <!-- Linking styles -->
+    <link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
+</head>
+<body>
+
+    <nav id="helpers"><!-- Defining the floating helpers of the page -->
+      <button title="Previous" id="nav-prev" class="nav-prev">&lt;-</button> 
+      <button title="Jump to slide" id="slide-no">3</button> 
+      <button title="Next" id="nav-next" class="nav-next">-&gt;</button>
+      <menu>
+        <button type="checkbox" data-command="notes" title="View Notes">Notes</button>
+        <button type="checkbox" data-command="help" title="View Help">Help</button>
+        <button type="checkbox" data-command="back" title="Back to tutorial">Back</button>
+      </menu>
+    </nav>
+
+    <div class="presentation"><!-- Defining the main presentation -->
+      <div id="presentation-counter">Loading...</div>
+
+      <div class="slides"><!-- Defining slides -->
+
+        <div class="slide" id="slide1"><!-- Defining single slide -->
+          <section class="middle">
+            <p>HTML5 Presentation demo</p>
+            <p>Press <span id="left-init-key" class="key">&rarr;</span> key to continue.</p>
+          </section>
+          <aside class="note"><!-- hidden notes of slide -->
+            <section>
+              Notes for first slide
+            </section>
+          </aside> 
+        </div>
+
+        <div class="slide" id="slide2">
+          <header>Slides controls</header>
+          <section>
+            <ul>
+              <li><span class="key">&larr;</span> and <span class="key">&rarr;</span> to move forward/back.</li>
+              <li><span class="key">spacebar</span> to move forward.</li>
+              <li><span class="key">N</span> to toggle hidden notes.</li>
+              <li><span class="key">H</span> to toggle help.</li>
+            </ul>
+          </section>
+          <aside class="note">
+            <section>
+              Notes for second slide
+            </section>
+          </aside> 
+        </div>
+
+        <div class="slide" id="slide3">
+          <section class="middle">
+            <hgroup>
+              <h1>
+                Slide3
+              </h1>
+              <h2>
+                Slide Title #3
+              </h2>
+            </hgroup>
+            <p>text of slide, text of slide, text of slide, text of slide</p>
+          </section>
+        </div>
+
+        <div class="slide" id="slide4">
+          <section class="middle">
+            <hgroup>
+              <h1>
+                Slide4
+              </h1>
+              <h2>
+                Slide Title #4
+              </h2>
+            </hgroup>
+            <p>text of slide, text of slide, text of slide, text of slide</p>
+          </section>
+        </div>
+
+        <div class="slide" id="slide5">
+          <section class="middle">
+            <hgroup>
+              <h1>
+                Slide5
+              </h1>
+              <h2>
+                Slide Title #5
+              </h2>
+            </hgroup>
+            <p>text of slide, text of slide, text of slide, text of slide</p>
+          </section>
+        </div>
+
+      </div>
+
+      <div id="hidden-note" class="invisible" style="display: none;">
+      </div> <!-- hidden note -->
+
+      <aside id="help" class="sidebar invisible" style="display: hidden;"><!-- Defining sidebar help -->
+        <table>
+          <caption>Help</caption>
+            <tr>
+              <th>Move forward/back</th>
+              <td>&larr;&nbsp;&rarr;</td>
+            </tr>
+            <tr>
+              <th>Move forward</th>
+              <td>spacebar</td>
+            </tr>
+            <tr>
+              <th>Hidden Notes</th>
+              <td>N</td>
+            </tr>
+            <tr>
+              <th>Help</th>
+              <td>H</td>
+            </tr>
+        </table>
+      </aside>
+
+    </div>
+
+    <script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
