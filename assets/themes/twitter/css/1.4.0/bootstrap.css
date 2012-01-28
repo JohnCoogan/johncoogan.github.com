@@ -1767,7 +1767,7 @@ table .span12 {
   background-color: #273D59;
   background-color: #456B8C;
   background-image: -moz-linear-gradient(top, #456B8C, #273D59);
-  background-image: -ms-linear-gradient(top, #456B8C, #0000B2);
+  background-image: -ms-linear-gradient(top, #456B8C, #273D59);
   background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#456B8C), to(#273D59));
   background-image: -webkit-linear-gradient(top, #456B8C, #273D59);
   background-image: -o-linear-gradient(top, #456B8C, #273D59);
