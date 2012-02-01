@@ -210,6 +210,8 @@ a:hover {
   position: relative;
   min-width: 600px;
   max-width: 850px;
+  margin-left: auto;
+  margin-right: auto;
   padding-left: 20px;
   padding-right: 20px;
   *zoom: 1;
@@ -1786,7 +1788,7 @@ table .span12 {
 .navbar .brand {
   float: right;
   display: block;
-  padding: 6px 20px 6px;
+  padding: 6px 0px 6px;
   margin-left: 0px;
   font-size: 16px;
   font-weight: 200;
@@ -1884,7 +1886,7 @@ table .span12 {
   left: 0;
   display: block;
   float: left;
-  margin: 0 10px 0 20px;
+  margin: 0 10px 0 0;
 }
 .navbar .nav.pull-right {
   float: right;
