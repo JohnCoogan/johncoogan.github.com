@@ -14,6 +14,7 @@
     <!-- Le scripts -->
     <script type="text/javascript" src="{{ ASSET_PATH }}/js/jquery.js"></script>
     <script type="text/javascript" src="{{ ASSET_PATH }}/js/bootstrap-carousel.js"></script>
+    <script type="text/javascript" src="{{ ASSET_PATH }}/js/bootstrap-collapse.js"></script>
     <script type="text/javascript" src="{{ ASSET_PATH }}/js/bootstrap-transition.js"></script>
     <script type="text/javascript" src="{{ ASSET_PATH }}/js/application.js"></script>
     <script type="text/javascript" src="{{ ASSET_PATH }}/js/bootstrap-modal.js"></script>
@@ -35,7 +36,7 @@
 	    ================================================== -->
 	    <div class="navbar navbar-fixed">
 	      <div class="navbar-inner">
-	        <div class="container">
+	        <div class="fluid-container">
 	          <a class="brand" href="{{ HOME_PATH }}">{{ site.title }}</a>
 	          <ul class="nav">
 	            {% assign pages_list = site.pages %}
@@ -46,16 +47,13 @@
 	      </div>
 	    </div>
 
-    <div class="container">
+    <div class="fluid-container">
 
       <div class="content">
         {{ content }}
-
-
       <footer class="footer">
-	    <p class="pull-right"><a href="#">Back to top</a></br>
-		&copy; {{ site.author.name }} 2012</p>
-		<p><a href="https://twitter.com/johncoogan" class="twitter-follow-button" data-show-count="false" data-size="large">Follow @johncoogan</a></p>
+	    <p class="pull-right">&copy; {{ site.author.name }} 2012</p>
+		<p><a href="https://twitter.com/johncoogan" class="twitter-follow-button" data-show-count="false" data-size="small">Follow @johncoogan</a></p>
 		<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
       </footer>
       </div>

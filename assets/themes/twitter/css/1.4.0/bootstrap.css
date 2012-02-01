@@ -208,7 +208,8 @@ a:hover {
 }
 .fluid-container {
   position: relative;
-  min-width: 940px;
+  min-width: 600px;
+  max-width: 850px;
   padding-left: 20px;
   padding-right: 20px;
   *zoom: 1;
@@ -243,13 +244,14 @@ a:hover {
   width: 100%;
 }
 p {
-  margin: 0 0 9px;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 13px;
-  line-height: 18px;
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  margin-bottom: 1.2em;
+  line-height: 1.7em;
+  font-weight: 200;
+  font-size: 15px;
 }
 p small {
-  font-size: 11px;
+  font-size: 13px;
   color: #999999;
 }
 .lead {
@@ -1784,16 +1786,16 @@ table .span12 {
 .navbar .brand {
   float: right;
   display: block;
-  padding: 8px 20px 12px;
-  margin-left: -20px;
-  font-size: 20px;
+  padding: 6px 20px 6px;
+  margin-left: 0px;
+  font-size: 16px;
   font-weight: 200;
   line-height: 1;
   color: #A7C6D9;
 }
 .navbar p {
   margin: 0;
-  line-height: 40px;
+  line-height: 30px;
 }
 .navbar p a:hover {
   color: #ffffff;
@@ -1871,7 +1873,7 @@ table .span12 {
   border-radius: 4px;
 }
 .navbar-fixed {
-  position: fixed;
+  position: fixed; 
   top: 0;
   right: 0;
   left: 0;
@@ -1882,7 +1884,7 @@ table .span12 {
   left: 0;
   display: block;
   float: left;
-  margin: 0 10px 0 0;
+  margin: 0 10px 0 20px;
 }
 .navbar .nav.pull-right {
   float: right;
@@ -1893,14 +1895,15 @@ table .span12 {
 }
 .navbar .nav > li > a {
   float: none;
-  padding: 10px 10px 11px;
-  line-height: 19px;
+  padding: 8px 10px 8px;
+  line-height: 15px;
   color: #A7C6D9;
   text-decoration: none;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
 }
 .navbar .nav > li > a:hover {
-  background-color: transparent;
+  background-color: #222222;
+  background-color: rgba(0, 0, 0, 0.5);
   color: #ffffff;
   text-decoration: none;
 }

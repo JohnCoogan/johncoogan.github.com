@@ -1,5 +1,8 @@
-// JS for javascript demos
+// Enable jquery functions via javascript
 $(function () {
-  // carousel demo
   $('#myCarousel').carousel()
+	$('#accordian2').on('hidden', function () {
+	  toggle: false
+	})
 })
+

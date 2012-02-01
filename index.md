@@ -1,10 +1,29 @@
 ---
-layout: page
+layout: default
 title: Home
 group: navigation
 ---
 {% include JB/setup %}
 
-## About me: 
+### Blog Posts: 
 
-I was born in Los Angeles where I lived in Pasadena, California for 18 years before moving to the east coast in '07 to study economics at Northeastern University. Currently, I'm finishing up my senior year while interning at a early-stage venture capital fund that focuses on mobile technology and clean energy. My job, although only part-time currently, constantly excites me because I get to learn about what drives business in emerging markets like India and Africa. I love to learn about economics and politics in foreign countries, and in my free time I enjoy learning about technology. I'm currently studying how financial incentives can improve academic achievement. 
+<div class="related">
+<div class="accordion" id="accordian2">
+  {% for post in site.posts %}
+	<div class="accordion-group">
+		<div class="accordion-heading">
+			<div class="rightdate">{{ post.date | date: "%B %e, %Y" }}</div>
+			<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordian2" data-target="#section-{{ post.uniqueid }}"> 
+				{{ post.title }}
+			</a>
+		</div>
+		<div id="section-{{ post.uniqueid }}" class="accordion-body collapse">
+			<div class="accordion-inner">
+				{{ post.content }}
+				<a href="{{ post.url }}">Permanent Link to Post</a>
+			</div>
+		</div>
+	</div>
+  {% endfor %}
+</div>
+</div>
